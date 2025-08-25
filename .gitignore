@@ -27,7 +27,7 @@ doc/api/
 .flutter-plugins-dependencies
 
 # dart-defines
-dart_defines/*.json
+#dart_defines/*.json # ある程度設定したらこちらも追加したほうがいい
 **/ios/Flutter/Dart-Defines.xcconfig
 **/ios/Flutter/Generated.xcconfig
 
