@@ -1,6 +1,15 @@
 {
   "dart.flutterSdkPath": ".fvm/versions/3.35.1",
   "cSpell.words": [
-    "cupertino"
+    "appbar",
+    "cupertino",
+    "dartdoc",
+    "dotenv",
+    "Podfile",
+    "pubspec",
+    "Schyler",
+    "SRCROOT",
+    "xcconfig",
+    "xcworkspace"
   ]
 }

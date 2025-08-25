@@ -9,6 +9,10 @@
 - flavor 設定済み。`.vscode/launch.json`より確認して欲しい。
   - ios はすでに dart-defines を設定している。
 
+## 推奨環境
+
+- VSCode, Cursor（.vscode に設定を追加しているため、他エディタでは別設定が必要）
+
 ## 必要な設定
 
 - fvm の環境構築。

@@ -8,9 +8,6 @@ import 'package:intl/intl.dart' as intl;
 import 'app_localizations_en.dart';
 import 'app_localizations_ja.dart';
 
-/// 多言語化はここから使う
-AppLocalizations? l10n(BuildContext context) => AppLocalizations.of(context);
-
 // ignore_for_file: type=lint
 
 /// Callers can lookup localized strings with an instance of AppLocalizations
