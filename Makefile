@@ -7,6 +7,7 @@ help:
 	@echo "  make ios_cache_clear      - Clear iOS cache"
 	@echo "  make cache_clear          - Clear Flutter and iOS caches"
 	@echo "  make cache_repair         - Repair Flutter pub cache"
+	@echo "  make flavorizr            - Run Flutter Flavorizr"
 	@echo "  make help                 - Show this help message"
 
 .DEFAULT_GOAL := setup
@@ -39,3 +40,6 @@ cache_clear:
 
 cache_repair:
 	flutter pub cache repair
+
+flavorizr:
+	flutter pub run flutter_flavorizr
