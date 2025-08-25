@@ -22,3 +22,7 @@ do
         echo "$item" >> "$OUTPUT_FILE"
     fi
 done
+
+echo "✅ Found: ${SRCROOT}/Flutter/Dart-Defines.xcconfig"
+cat ${OUTPUT_FILE}
+echo "✅ Done: "
