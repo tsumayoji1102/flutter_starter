@@ -6,6 +6,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
+import 'app_localizations_ja.dart';
+
+/// 多言語化はここから使う
+AppLocalizations? l10n(BuildContext context) => AppLocalizations.of(context);
 
 // ignore_for_file: type=lint
 
@@ -92,7 +96,10 @@ abstract class AppLocalizations {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[Locale('en')];
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('en'),
+    Locale('ja'),
+  ];
 
   /// The conventional newborn programmer greeting
   ///
@@ -112,7 +119,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['en'].contains(locale.languageCode);
+      <String>['en', 'ja'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -123,6 +130,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en':
       return AppLocalizationsEn();
+    case 'ja':
+      return AppLocalizationsJa();
   }
 
   throw FlutterError(
