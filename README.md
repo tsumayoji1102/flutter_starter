@@ -2,20 +2,25 @@
 
 これを使えば、ある程度揃った状態で Flutter 開発を始められる。
 
-- `lib/src`より、いきなり実装を書いていける。
+- `lib`より、いきなり実装を書いていける。
 - `lib/l10n`より、多言語化設定を初期から設定できる。
 - Makefile によく使うコマンドをまとめている。
 - fvm 導入済み。
 - flavor 設定済み。`.vscode/launch.json`より確認して欲しい。
   - ios はすでに dart-defines を設定している。
+- ライブラリは最新の状態で入れておきたいので、`flutter_flavorizr`, `intl`以外は外部のものを入れていない。
+- `instructions`ディレクトリ内に AI 用の指示をまとめており、現状 Copilot, Cursor ではこちらを参照するように設定している。
+  - AI 用の指示がしたい場合は、こちらに追記していったり、README.md を適宜追加して参照するようにして欲しい。
 
 ## 推奨環境
 
-- VSCode, Cursor（.vscode に設定を追加しているため、他エディタでは別設定が必要）
+- エディタ: VSCode, Cursor（.vscode に設定を追加しているため、他エディタでは別設定が必要）
+- `main.dart`, `app.dart`, `flavors.dart`は flutter_flavorizr によって生成されるため、配置を変えないほうが良い（少なくとも flutter_flavorizr の設定を変更しうる限り）。
 
 ## 必要な設定
 
 - fvm の環境構築。
-- dart_defines に dev.json, prod.json を追加する必要がある。(.gitignore に追加されているので注意)
-- bundle id が flutter_starter（キャメルになってる箇所もあるので確認必要）に設定されているので、全てを書き換える必要あり。
-  - 環境設定からできれば一番いいがまだやってない。
+- `dart_defines` に dev.json, prod.json を追加されているが、.gitignore に追加すること
+- `flutter_flavorizr`の設定。
+  - まず、このライブラリが最新であるかを確認。最新でなければアップデート。
+  - `flavorizr.yaml`に必要な情報をいれて、`$ make flavorizr`を実行。

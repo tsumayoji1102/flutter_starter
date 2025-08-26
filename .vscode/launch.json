@@ -8,7 +8,7 @@
             "name": "dev",
             "request": "launch",
             "type": "dart",
-            "program": "lib/src/main.dart",
+            "program": "lib/main.dart",
             "args": [
                 "--debug",
                 "--flavor",
@@ -20,7 +20,7 @@
             "name": "prod",
             "request": "launch",
             "type": "dart",
-            "program": "lib/src/main.dart",
+            "program": "lib/main.dart",
             "args": [
                 "--debug",
                 "--flavor",
@@ -32,7 +32,7 @@
             "name": "flutter_starter",
             "request": "launch",
             "type": "dart",
-            "program": "lib/src/main.dart",
+            "program": "lib/main.dart",
         },
     ]
 }
