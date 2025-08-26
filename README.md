@@ -3,8 +3,9 @@
 これを使えば、ある程度揃った状態で Flutter 開発を始められる。
 
 - `lib`より、いきなり実装を書いていける。
-- `lib/l10n`より、多言語化設定を初期から設定できる。
 - Makefile によく使うコマンドをまとめている。
+- `lib/l10n`より、多言語化設定を初期から設定できる。
+  - `$ make l10n`実行で、arb に追加した要素を生成できる。
 - fvm 導入済み。
 - flavor 設定済み。`.vscode/launch.json`より確認して欲しい。
   - ios はすでに dart-defines を設定している。
@@ -19,8 +20,8 @@
 
 ## 必要な設定
 
-- fvm の環境構築。
-- `dart_defines` に dev.json, prod.json を追加されているが、.gitignore に追加すること
-- `flutter_flavorizr`の設定。
-  - まず、このライブラリが最新であるかを確認。最新でなければアップデート。
-  - `flavorizr.yaml`に必要な情報をいれて、`$ make flavorizr`を実行。
+- [ ] fvm の環境構築。
+- [ ] `dart_defines` に dev.json, prod.json を追加されているが、.gitignore に追加すること
+- [ ] `flutter_flavorizr`の設定。
+  - [ ] まず、このライブラリが最新であるかを確認。最新でなければアップデート。
+  - [ ] `flavorizr.yaml`に必要な情報をいれて、`$ make flavorizr`を実行。
