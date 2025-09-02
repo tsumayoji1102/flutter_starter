@@ -2,6 +2,7 @@
   "dart.flutterSdkPath": ".fvm/versions/3.35.1",
   "cSpell.words": [
     "appbar",
+    "Bizzottoが提案するRiverpodアーキテクチャをベースとしています",
     "cupertino",
     "dartdoc",
     "dotenv",

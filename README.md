@@ -13,6 +13,11 @@
 - `instructions`ディレクトリ内に AI 用の指示をまとめており、現状 Copilot, Cursor ではこちらを参照するように設定している。
   - AI 用の指示がしたい場合は、こちらに追記していったり、README.md を適宜追加して参照するようにして欲しい。
 
+## 参考にしている構成
+
+- Flutter Project Structure: Feature-first or Layer-first?
+  - https://codewithandrea.com/articles/flutter-project-structure/
+
 ## 推奨環境
 
 - エディタ: VSCode, Cursor（.vscode に設定を追加しているため、他エディタでは別設定が必要）
